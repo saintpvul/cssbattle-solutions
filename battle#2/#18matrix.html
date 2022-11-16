@@ -6,5 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="pl">
+      <div class="p">
+        <div class="p1"></div>
+        <div class="l1"></div>
+        <div class="p1 p2"></div>
+        <div class="l1 l2"></div>
+      </div>
+      <div class="p pp">
+        <div class="p1"></div>
+        <div class="l1"></div>
+        <div class="p1 p2"></div>
+        <div class="l1 l2-m"></div>
+      </div>
+      <div class="p ppp">
+        <div class="p1"></div>
+        <div class="l1"></div>
+        <div class="p1 p2"></div>
+        <div class="l1 l2"></div>
+      </div>
+    </div>
+    <style>
+      * {
+        background: #5c434c;
+        margin: 0;
+      }
+      .pl {
+        width: 380;
+        height: 280px;
+        position: relative;
+        left: 10;
+        top: 10;
+      }
+      .p {
+        position: absolute;
+        width: 380;
+        height: 80;
+      }
+      .p1 {
+        position: absolute;
+        background: #f09462;
+        width: 80;
+        height: 80;
+        border-radius: 100% 0 0 0;
+      }
+      .p2 {
+        left: 200;
+        top: 0;
+      }
+      .pp {
+        top: 100;
+        left: 100;
+      }
+      .ppp {
+        top: 200;
+      }
+      .l1 {
+        position: absolute;
+        left: 100;
+        background: #f5d6b4;
+        width: 80;
+        height: 80;
+        border-radius: 100% 0 0 0;
+      }
+      .l2 {
+        left: 300;
+      }
+      .l2-m {
+        left: -100;
+      }
+    </style>
+  </body>
 </html>
