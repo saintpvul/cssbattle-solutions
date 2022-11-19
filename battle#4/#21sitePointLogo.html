@@ -6,5 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="o"></div>
+    <div class="o o2"></div>
+    <div class="b"></div>
+    <div class="b b2"></div>
+    <style>
+      * {
+        background: #222;
+        margin: 0;
+      }
+      .o {
+        position: absolute;
+        width: 100;
+        height: 30;
+        background: #f2994a;
+        transform: rotate(-45deg);
+        border-radius: 10px 0% 0 0;
+        top: 93;
+        left: 120;
+      }
+      .o2 {
+        transform: rotate(45deg);
+        width: 71;
+        height: 30;
+        top: 139;
+        left: 131;
+        border-radius: 0 5px 0 10px;
+      }
+
+      .b {
+        position: absolute;
+        width: 100;
+        height: 30;
+        background: #2d9cdb;
+        transform: rotate(-45deg);
+        border-radius: 0 0 10px 0;
+        bottom: 93;
+        right: 122;
+      }
+      .b2 {
+        transform: rotate(45deg);
+        width: 71;
+        height: 30;
+        bottom: 139;
+        right: 132;
+        border-radius: 0 5px 0 5px;
+      }
+    </style>
+  </body>
 </html>
