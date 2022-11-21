@@ -6,5 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="r"></div>
+    <div class="r r2"></div>
+    <div class="r r3"></div>
+    <div class="r r3 r4"></div>
+    <style>
+      * {
+        background: #f3ac3c;
+        margin: 0;
+      }
+      .r {
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        background: #1a4341;
+        top: 50;
+        left: 200;
+      }
+      .r2 {
+        transform: rotate(90deg);
+        top: 0;
+        left: 150;
+      }
+      .r3 {
+        width: 50;
+        height: 100;
+        background: #998235;
+        left: 100;
+        top: 150;
+      }
+      .r4 {
+        transform: rotate(90deg);
+        top: 125;
+        left: 125;
+      }
+    </style>
+  </body>
 </html>
