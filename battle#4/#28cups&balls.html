@@ -6,5 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="c c1"></div>
+    <div class="c c2"></div>
+    <div class="c c1 c3"></div>
+    <div class="c c2 c4"></div>
+    <div class="r r1"></div>
+    <div class="r r2"></div>
+    <div class="r r1 r3"></div>
+    <div class="r r2 r4"></div>
+    <style>
+      * {
+        background: #1a4341;
+        margin: 0;
+      }
+      .c {
+        width: 50;
+        height: 50;
+        position: absolute;
+        border-radius: 50%;
+      }
+      .c1 {
+        background: #998235;
+        left: 70;
+        top: 90;
+      }
+      .c3 {
+        left: 140;
+        top: 160;
+      }
+      .c2 {
+        left: 280;
+        top: 90;
+        background: #f3ac3c;
+      }
+      .c4 {
+        left: 210;
+        top: 160;
+      }
+      .r {
+        width: 50;
+        height: 50;
+        position: absolute;
+        border-radius: 50% 50% 0 0;
+      }
+      .r1 {
+        top: 90;
+        left: 140;
+        background: #f3ac3c;
+      }
+      .r3 {
+        left: 70;
+        top: 160;
+        border-radius: 0 0 50% 50%;
+      }
+      .r2 {
+        background: #998235;
+        left: 210;
+        top: 90;
+      }
+      .r4 {
+        left: 280;
+        top: 160;
+        border-radius: 0 0 50% 50%;
+      }
+    </style>
+  </body>
 </html>
