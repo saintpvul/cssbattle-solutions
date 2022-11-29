@@ -6,5 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div></div>
+    <style>
+      body {
+        background: #6592cf;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+      div {
+        width: 110px;
+        position: relative;
+        overflow: hidden;
+      }
+      div:before {
+        content: "";
+        position: absolute;
+        border: 30px solid #243d83;
+        width: 300;
+        height: 182;
+        border-radius: 70px;
+        top: 30;
+        right: calc(50% - 15px);
+        -webkit-box-reflect: right -30px;
+      }
+    </style>
+  </body>
 </html>
