@@ -6,5 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="c">
+      <div class="r-t"></div>
+      <div class="l-t"></div>
+    </div>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #293462;
+      }
+      .c {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #fff1c1;
+        overflow: hidden;
+        position: relative;
+      }
+      .r-t {
+        width: 0;
+        height: 0;
+        border-bottom: 200px solid #fe5f55;
+        border-right: 200px solid transparent;
+        border-left: 200px solid transparent;
+        position: absolute;
+        left: -59.5;
+        top: 59;
+      }
+      .l-t {
+        background: #fe5f55;
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        position: absolute;
+        left: -59.5;
+        top: 59;
+        position: absolute;
+        left: 4.5;
+        top: 140;
+      }
+    </style>
+  </body>
 </html>
