@@ -6,5 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div></div>
+    <style>
+      body {
+        background: #293462;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        width: 200;
+        height: 120;
+        background: #a64942;
+        border-radius: 20px;
+        position: relative;
+      }
+      :before,
+      :after {
+        content: "";
+        position: absolute;
+        border-radius: 20px;
+      }
+      div:before {
+        width: 100%;
+        height: 100;
+        background: #fe5f55;
+      }
+      div:after {
+        width: 140;
+        height: 40;
+        top: 30;
+        left: 30;
+        background: #a64942;
+      }
+    </style>
+  </body>
 </html>
