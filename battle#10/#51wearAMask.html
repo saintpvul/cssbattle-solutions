@@ -6,5 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <style>
+      body {
+        background: #293462;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div:nth-child(1) {
+        width: 150;
+        height: 100;
+        background: #fff1c1;
+        border-radius: 0 0 50px 50px;
+      }
+      div:nth-child(2) {
+        width: 40;
+        height: 40;
+        position: absolute;
+        left: 215;
+        top: 140;
+        background: #fe5f55;
+        position: absolute;
+        border-radius: 50%;
+      }
+      div:nth-child(3) {
+        width: 40;
+        height: 10;
+        position: absolute;
+        border-radius: 10px;
+        background: #fe5f55;
+        top: 120;
+        left: 145;
+      }
+      div:nth-child(4) {
+        width: 40;
+        height: 10;
+        position: absolute;
+        border-radius: 10px;
+        background: #fe5f55;
+        top: 140;
+        left: 145;
+      }
+      div:nth-child(5) {
+        width: 65;
+        height: 60;
+        position: absolute;
+        left: 65;
+        top: 100.4;
+        background: #fff1c1;
+        border-radius: 50px 0 0 50px;
+      }
+      div:nth-child(5) > span {
+        width: 50;
+        height: 40;
+        position: absolute;
+        left: 10;
+        top: 10;
+        background: #293462;
+        border-radius: 50px 0 0 50px;
+      }
+      div:nth-child(6) {
+        width: 65;
+        height: 60;
+        position: absolute;
+        right: 65;
+        top: 100;
+        background: #fff1c1;
+        border-radius: 0 60px 60px 0;
+      }
+      div:nth-child(6) > span {
+        width: 50;
+        height: 40;
+        position: absolute;
+        left: 5;
+        top: 10;
+        background: #293462;
+        border-radius: 0 50px 50px 0;
+      }
+    </style>
+  </body>
 </html>
