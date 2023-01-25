@@ -6,5 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <style>
+      body {
+        background: #6592cf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        width: 10;
+        height: 50;
+        background: #243d83;
+        margin: 30 17.5 0;
+        position: relative;
+      }
+      div:nth-child(4) {
+        margin-left: 48;
+      }
+      :before,
+      :after {
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+      }
+      div:before {
+        width: 20;
+        height: 20;
+        background: #243d83;
+        top: -10;
+        left: -5;
+      }
+
+      div:nth-child(1):after,
+      div:nth-child(3):after {
+        width: 40;
+        height: 40;
+        position: absolute;
+        border-radius: 50%;
+        background: #eeb850;
+        left: -15;
+        top: -20;
+        z-index: -1;
+      }
+      div:nth-child(2):after {
+        width: 60;
+        height: 60;
+        position: absolute;
+        border-radius: 50%;
+        background: #eeb850;
+        left: -25;
+        top: -40;
+        z-index: -1;
+      }
+    </style>
+  </body>
 </html>
