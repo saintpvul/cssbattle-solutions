@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <style>
+      body {
+        background: #19191a;
+      }
+      div {
+        width: 150;
+        height: 150;
+        background: #4f77ff;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50;
+        transform: translate(-50%);
+        overflow: hidden;
+      }
+      :before {
+        content: "";
+        position: absolute;
+        width: 75;
+        height: 125;
+      }
+      div:before {
+        background: #9ad5ff;
+        top: 50%;
+      }
+      body:before {
+        background: #f9e492;
+        top: 125;
+        left: 31.3%;
+      }
+    </style>
+  </body>
+</html>
